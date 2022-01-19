@@ -19,13 +19,13 @@ class HexagonFramePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()
-      ..strokeWidth = 2.r
-      ..color = color
+      ..strokeWidth = 1.r
+      ..color = colorWhite
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
 
     Paint paintShadow = Paint()
-      ..strokeWidth = 4.r
+      ..strokeWidth = 3.r
       ..color = color
       ..style = PaintingStyle.stroke
       ..maskFilter = MaskFilter.blur(BlurStyle.normal, 4)

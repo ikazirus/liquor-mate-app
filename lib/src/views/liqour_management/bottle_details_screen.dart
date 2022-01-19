@@ -7,6 +7,21 @@ class BottleDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Edit Bottle Details"),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          BottleImageHexagon(imageUrl: "imageUrl", width: 140.r, height: 160.r),
+          SizedBox(
+            height: 16.r,
+            width: double.infinity,
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -1,3 +1,51 @@
 {
-    "app_name": "LIQUOR MATE"
+    "app": {
+        "app_name": "LIQUOR MATE",
+        "shops": "Shops/Bars",
+        "measure": "Measure",
+        "sync": "Sync",
+        "bottle_db": "Bottle List",
+        "resports": "Reports",
+        "settings": "Settings",
+        "name": "Name :"
+    },
+    "dashboard": {
+        "stats": "Statistics",
+        "available_vol": "Available volume:",
+        "no_of_bottles": "No. of Bottles:",
+        "today_usage": "Today usage:",
+        "avg_usage": "Avg. daily usage:"
+    },
+    "shops": {},
+    "measure": {},
+    "sync": {},
+    "bottle_db": {},
+    "resports": {},
+    "settings": {},
+    "auth": {
+        "login": "Sign in",
+        "register": "Register",
+        "email": "Email",
+        "password": "Password",
+        "pw_reset": "Forgot password?",
+        "invalid_email_pw": "Email or password is invalid.",
+        "success": "Success !!!"
+    },
+    "welcome": {
+        "welcome": "Welcome to the Liquor Mate App.",
+        "instructions": "Follow these instructions to setup app"
+    },
+    "dialog": {},
+    "error": {
+        "connectivity_error": "Please, Check your internet connection.",
+        "connetion_timeout": "Connection Timeout. Please, try again.",
+        "try_again": "Please, try again.",
+        "upload_failed": "Upload failed. Please, try again.",
+        "exception_400": "Bad Request.",
+        "exception_401": "Unauthorized.",
+        "exception_403": "Forbidden.",
+        "exception_404": "Not Found.",
+        "exception_500": "Internal Server Error.",
+        "exception_503": "Service Unavailable."
+    }
 }

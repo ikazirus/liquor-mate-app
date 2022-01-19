@@ -29,8 +29,8 @@ const LinearGradient whiteGradient = LinearGradient(
 
 const LinearGradient whiteGradientRtL = LinearGradient(
   colors: [
-    Color(0x0fdddddd),
-    Color(0x04dddddd),
+    Color(0x30000000),
+    Color(0x18000000),
   ],
   end: Alignment.centerLeft,
   begin: Alignment.centerRight,

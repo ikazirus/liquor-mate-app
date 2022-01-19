@@ -14,3 +14,9 @@ export 'liqour_management/liquor_bottles_database_screen.dart';
 export 'measure/measure_home_screen.dart';
 
 export 'shop/shops_home_screen.dart';
+
+export 'widgets/bottle_image_hexagon.dart';
+export 'widgets/bottle_tile.dart';
+export 'widgets/custom_painters/hexagon.dart';
+export 'widgets/dashboard_button.dart';
+export 'widgets/liquor_stats_tile.dart';

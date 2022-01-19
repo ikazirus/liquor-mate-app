@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:liquor_mate/index.dart';
-import 'package:liquor_mate/src/widgets/bottle_tile.dart';
 
 class LiquorBottleDatabaseScreen extends StatelessWidget {
   static const String route = "/LiquorBottleDatabaseScreen";
@@ -24,21 +22,7 @@ class LiquorBottleDatabaseScreen extends StatelessWidget {
           Expanded(
               child: SingleChildScrollView(
             child: Wrap(
-              children: [
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-                BottleTile(),
-              ],
+              children: List.generate(50, (index) => BottleTile()),
             ),
           ))
         ],
