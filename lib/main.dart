@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/services.dart';
 import 'package:liquor_mate/index.dart';
 
 void main() async {
@@ -18,6 +19,12 @@ void main() async {
 }
 
 class LiquorMateApp extends StatelessWidget {
+  final mySystemTheme = SystemUiOverlayStyle.light.copyWith(
+      statusBarBrightness: Brightness.light,
+      systemNavigationBarColor: colorBackground,
+      statusBarColor: colorBackground,
+      statusBarIconBrightness: Brightness.light);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,9 +34,12 @@ class LiquorMateApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         UI.initialize(context);
-        return MediaQuery(
-          data: MediaQuery.of(context).copyWith(textScaleFactor: UI.ratio),
-          child: child ?? Text("UNRESPONSIVE"),
+        return AnnotatedRegion<SystemUiOverlayStyle>(
+          value: mySystemTheme,
+          child: MediaQuery(
+            data: MediaQuery.of(context).copyWith(textScaleFactor: UI.ratio),
+            child: child ?? Text("UNRESPONSIVE"),
+          ),
         );
       },
       theme: ThemeData(
