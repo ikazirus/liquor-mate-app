@@ -1,0 +1,4 @@
+class PaymentsController {
+  startSubscription() {}
+  endSubscription() {}
+}

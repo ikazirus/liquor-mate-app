@@ -72,6 +72,7 @@ class LiquorMateApp extends StatelessWidget {
         ShopsHomeScreen.route: (context) => ShopsHomeScreen(),
         MeasureHomeScreen.route: (context) => MeasureHomeScreen(),
         SettingsScreen.route: (context) => SettingsScreen(),
+        ReportHomeScreen.route: (context) => ReportHomeScreen(),
       },
       initialRoute: SplashScreen.route,
     );

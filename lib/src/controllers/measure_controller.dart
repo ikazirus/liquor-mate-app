@@ -1,0 +1,4 @@
+class Calculation {
+  calculateViscocity() {}
+  calculateVolume() {}
+}

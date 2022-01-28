@@ -7,15 +7,15 @@ class LiquorStatsTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
       padding: EdgeInsets.symmetric(vertical: 8.r, horizontal: 12.r),
+      height: 136.r,
       child: Stack(
+        alignment: Alignment.centerLeft,
         children: [
           Positioned(
             left: 50.r,
             right: 0,
-            top: 0,
-            bottom: 0,
             child: Container(
               padding: EdgeInsets.only(
                 left: 58.r,
@@ -23,7 +23,6 @@ class LiquorStatsTile extends StatelessWidget {
                 top: 8.r,
                 bottom: 8.r,
               ),
-              height: 220.r,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +31,7 @@ class LiquorStatsTile extends StatelessWidget {
                     "Absinthe (175ml)",
                     style: TextStyle(
                       color: colorWhite,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w700,
                       fontSize: 16,
                     ),
                   ),
@@ -40,8 +39,8 @@ class LiquorStatsTile extends StatelessWidget {
                     "Whiskey",
                     style: TextStyle(
                       color: colorGreen,
-                      fontWeight: FontWeight.w200,
-                      fontSize: 9,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 10,
                     ),
                   ),
                   Divider(
@@ -58,16 +57,16 @@ class LiquorStatsTile extends StatelessWidget {
                               tr("dashboard.available_vol"),
                               style: TextStyle(
                                 color: colorGrey,
-                                fontWeight: FontWeight.w200,
-                                fontSize: 8,
+                                fontWeight: FontWeight.w300,
+                                fontSize: 10,
                               ),
                             ),
                             Text(
                               "1789900 ml",
                               style: TextStyle(
                                 color: colorWhite,
-                                fontWeight: FontWeight.w400,
-                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12,
                               ),
                             ),
                             SizedBox(
@@ -77,16 +76,16 @@ class LiquorStatsTile extends StatelessWidget {
                               tr("dashboard.no_of_bottles"),
                               style: TextStyle(
                                 color: colorGrey,
-                                fontWeight: FontWeight.w200,
-                                fontSize: 8,
+                                fontWeight: FontWeight.w300,
+                                fontSize: 10,
                               ),
                             ),
                             Text(
                               "560",
                               style: TextStyle(
                                 color: colorWhite,
-                                fontWeight: FontWeight.w400,
-                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12,
                               ),
                             ),
                           ],
@@ -150,7 +149,7 @@ class LiquorStatsTile extends StatelessWidget {
           BottleImageHexagon(
             imageUrl: "imageUrl",
             frameColor: colorTag5,
-            height: 120,
+            height: 100,
             width: 80,
           ),
         ],

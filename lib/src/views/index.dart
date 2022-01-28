@@ -15,6 +15,10 @@ export 'measure/measure_home_screen.dart';
 
 export 'shop/shops_home_screen.dart';
 
+export 'reports/reports_home_screen.dart';
+
+export 'settings/settings_screen.dart';
+
 export 'widgets/bottle_image_hexagon.dart';
 export 'widgets/bottle_tile.dart';
 export 'widgets/custom_painters/hexagon.dart';

@@ -28,7 +28,7 @@ class HexagonFramePainter extends CustomPainter {
       ..strokeWidth = 3.r
       ..color = color
       ..style = PaintingStyle.stroke
-      ..maskFilter = MaskFilter.blur(BlurStyle.normal, 4)
+      ..maskFilter = MaskFilter.blur(BlurStyle.normal, 2)
       ..strokeCap = StrokeCap.round;
 
     canvas.drawPath(getDistortedHexagonPath(size), paintShadow);

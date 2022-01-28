@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:liquor_mate/index.dart';
@@ -60,8 +62,37 @@ class DashboardScreen extends StatelessWidget {
                   size: buttonSize.r,
                 ),
                 DashboardButton(
-                  onTap: () =>
-                      Navigator.pushNamed(context, DashboardScreen.route),
+                  onTap: () async {
+                    BaseController().showBusy(context, function: () async {
+                      await Future.delayed(const Duration(seconds: 2));
+                      return true;
+                    });
+                    // showModalBottomSheet(
+                    //     backgroundColor: colorBackground,
+                    //     context: context,
+                    //     builder: (_) => SizedBox(
+                    //         height: 200.r,
+                    //         child: Padding(
+                    //           padding: EdgeInsets.all(16.0.r),
+                    //           child: Column(
+                    //             children: [
+                    //               Text(
+                    //                 "Data Syncing",
+                    //                 style: UI.textTheme.headline6!
+                    //                     .copyWith(color: Colors.white),
+                    //               ),
+                    //               Spacer(),
+                    //               LinearProgressIndicator(
+                    //                 color: colorGreen,
+                    //               ),
+                    //             ],
+                    //           ),
+                    //         )));
+                    // Timer(Duration(seconds: 8), () {
+                    //   Navigator.maybePop(context);
+
+                    // });
+                  },
                   text: tr("app.sync"),
                   icon: assetIconSync,
                   size: buttonSize.r,
@@ -75,7 +106,7 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 DashboardButton(
                   onTap: () =>
-                      Navigator.pushNamed(context, DashboardScreen.route),
+                      Navigator.pushNamed(context, ReportHomeScreen.route),
                   text: tr("app.resports"),
                   icon: assetIconReports,
                   size: buttonSize.r,
